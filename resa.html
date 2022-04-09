@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="node_modules/bootswatch/dist/cerulean/bootstrap.css">
+<title>Commande</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-info">
+            Bienvenu chez sandwich Chaneb
+        </div>
+<div class="container">
+    <form action="recap.php" method="post" enctype="multipart/form-data" name="resto" >
+        Votre nom : <input type="text" name="nom"  placeholder="nom" class="form-control"> 
+        Votre prenom: <input type="text" name="prenom"  placeholder="prenom" class="form-control"> 
+        Nombre de sandwich : <input type="number" name="nombre"  placeholder="Nombre" class="form-control"> 
+        Quelles sandwich voulez vous?
+        <select name="type"  class="form-control">
+        
+            <option value="viande" >Viande</option>
+            <option value="Poulet">Poulet</option>
+            <option value="Escalope" >Escalope</option>
+        </select> 
+        Quelles ingredients voulez vous ajouter? <br>
+        Harissa <input class="form-check-input" type="checkbox" value="harissa" name="ingredients[]">
+        Salade <input class="form-check-input" type="checkbox" value="salade" name="ingredients[]">
+        Mayo <input class="form-check-input" type="checkbox" value="mayo" name="ingredients[]"> <br> <br> 
+        Veuillez mentionner votre adresse :
+         <textarea name="adresse" cols="10" rows="3" class="form-control"></textarea>
+         Veuillez uploader votre CIN afin de valider votre demande :
+          <input name="cin" type="file" class="form-control">
+        <input type="submit" value="envoyer" class="btn btn-outline-primary">
+        </form>
+</div>
+      
+</body>
+</html>
